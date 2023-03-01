@@ -1,0 +1,16 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+.singlecardPage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.singlecardPage-card{
+    width:60%;
+    margin: auto;
+}

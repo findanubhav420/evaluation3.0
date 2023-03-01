@@ -3,9 +3,10 @@
     margin:0px;
 }
 
-.card{
-    height: 550px;
-    width: 450px;
+.detailcard{
+    margin-top: 40px;
+    height: 770px;
+    width: 600px;
     background-color: black;
     color: white;
     padding: 1px;
@@ -15,18 +16,18 @@
     align-items: center;
 }
 
-.card-image{
-    height: 40%;
+.detailcard-image{
+    height: 50%;
     width: 100%;    
 }
 
-#card-img{
+#detailcard-img{
     height: 100%;
     width: 100%;    
 }
 
-.card-content{
-    height: 60%;
+.detailcard-content{
+    height: 50%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -36,48 +37,64 @@
     font-family: 'Big Shoulders Text', sans-serif;
 }
 
-.card-title{
+.detailcard-title{
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 400;
     font-family: 'Big Shoulders Text', sans-serif;
 }
 
-.card-description{
-    font-size: 1.2rem;
+.detailcard-description{
+    font-size: 1rem;
     font-weight: 400;
     text-align: center;
-    overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  margin-left: 5px;
-  margin-right: 5px;
-  font-family: 'Sofia Sans', sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
-.card-icons{
+.detailcard-icons{
     height: 10%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
-    
+    padding-right: 5px;
+    margin: 20px;
     
 }
 
-.bookmark-icon{
+.detailbookmark-icon{
     height: 100%;
     width: 100%;
+    size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.register-div{
-   color:green;
+.detailregister-div{
+   color:#A0F3AD;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.detailcard-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detailcard-button button{
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Big Shoulders Text', sans-serif;
+    cursor: pointer;
 }

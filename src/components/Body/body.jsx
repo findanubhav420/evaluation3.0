@@ -1,7 +1,7 @@
 import {React, useEffect, useState} from "react";
 import "./body.css";
 import makeRequest from "../../utils/makeRequest";
-import {GET_EVENTS} from "../../constants/apiEndPoints.js";
+import {GET_ALL_EVENTS} from "../../constants/apiEndPoints.js";
 
 import Card from "../../components/Card/card.jsx";
 
@@ -9,7 +9,7 @@ function Body() {
 
     const [data,setData] = useState();
     useEffect(() => {
-        makeRequest(GET_EVENTS)
+        makeRequest(GET_ALL_EVENTS)
         .then((res) => {
             setData(res);
         })  
@@ -26,6 +26,7 @@ function Body() {
                 venue={event.venue}
                 datetime={event.datetime}
                 timezone={event.timezone}
+                areSeatsAvailable={event.areSeatsAvailable}
                 isRegistered={event.isRegistered}
                 isBookmarked={event.isBookmarked}
                 />

@@ -1,70 +1,43 @@
-*{
-    padding: 0px;
-    margin: 0px;
-}
-
-.header{
-    background-color: white;
-    height: 60px;
-    width: 100%;
+.above-header {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.filter-icon{
-    height: 30px;
-    width: 30px;
-    background-color: black;
-    border-radius: 50%;
-    display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-}
-
-.search-bar{
-    display : flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-#search-input{
-    height:60%;
-    width: 250px;
+    height: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  
+  #searchinput{
+    padding: 5px;
+    border: 1px solid black;
+    width: 150px;
     border-radius: 10px;
-    margin-right: 10px;
-}
-.search-button{
-    height: 60%;
-    width: 60px; 
-    background-color: transparent;
-    border: none;
-}
-
-.filter-button{
-    height: 60%;
-    width: 60px; 
-    background-color: transparent;
-    border: none;
-}
-
-.filter-options{
+    margin-right: 5px;
+  }
+  
+  .filter-buttons {
+    padding-right: 300px;
+    padding-left: 300px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
     flex-wrap: wrap;
-}
-
-.filter-option{
-    height: 30px;
+    gap:20px;
+    height: 100px;
+  }
+  
+  .filter-buttons{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    padding-bottom: 5px;
+  }
+  
+  .filter-text {
+    display: flex;
+    gap: 5px;
     align-items: center;
-    color: white;
-}
+
+  }
+  
+  

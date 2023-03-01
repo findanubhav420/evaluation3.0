@@ -98,3 +98,11 @@
     font-family: 'Big Shoulders Text', sans-serif;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 650px) {
+    .detailcard{
+        margin-top: 40px;
+        height: 850px;
+        width: 100%;
+    }
+}

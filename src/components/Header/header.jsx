@@ -1,54 +1,51 @@
-import {React,useState} from "react";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilter, faChevronUp, faMagnifyingGlass, faCircleDot } from '@fortawesome/free-solid-svg-icons';
+import { faCircle } from '@fortawesome/free-regular-svg-icons';
+import './header.css';
 
-import "./header.css";
+function Header (){
 
-function Header() {
-    const [filter,setFilter] = useState(true);
-    function handleClick() {
-        setFilter(!filter);
-    }
-    return !filter?(
-        <div className="header">
-            <div className="filter-icon">
-                <i className="fas fa-filter"></i>
-                <button onClick={handleClick}className="filter-button">FILTER</button>
-            </div>
-            <div className="search-bar">
-                <input id="search-input" type="text" placeholder="EVENT NAME"/>
-                <button className="search-button">SEARCH</button>
-            </div>
-        </div>):(
-            <>
-             <div className="header">
-            <div className="filter-icon">
-                <i className="fas fa-filter"></i>
-                <button onClick={handleClick}className="filter-button">FILTER</button>
-            </div>
-            <div className="search-bar">
-                <input id="search-input" type="text" placeholder="EVENT NAME"/>
-                <button className="search-button">SEARCH</button>
-            </div>
-            </div>
-         <div className="filter-options">
-         <label>
-        <input type="checkbox" onChange={() => {}} />
-        <span>ALL</span>
-        </label>
-         <label>
-        <input type="checkbox" onChange={() => {}} />
-        <span>REGISTERED</span>
-        </label>
-         <label>
-        <span>BOOKMARKED</span>
-        <input type="checkbox" onChange={() => {}} />
-        </label>
-         <label>
-        <span>SEATS AVAILABLE</span>
-        <input type="checkbox" onChange={() => {}} />
-        </label>
-         </div>
-            </>
-        )
-}
+
+  return (
+    <div className='header'>
+      <div className='above-header'>
+        <div className='filter'>
+          <div className='filter-symbol'>
+            <FontAwesomeIcon icon={faFilter} />
+            <h3> Filter </h3>
+            <FontAwesomeIcon icon={faChevronUp} />
+          </div>
+        </div>
+        <div className='search'>
+          <div className='search-header'>
+            <input id="search-input" type='text' placeholder='Event Name'  />
+            <FontAwesomeIcon icon={faMagnifyingGlass} />
+          </div>
+        </div>
+      </div>
+      <div className='filter-buttons'>
+          <div className='filter-text'>
+            <FontAwesomeIcon icon={faCircleDot} />
+            <p>All</p>
+          </div>
+          <div className='filter-text'>
+            <p>Bookmarked</p>
+            <FontAwesomeIcon icon={faCircle} />
+        </div>
+        <div className='filter-buttons'>
+          <div className='filter-text'>
+            <FontAwesomeIcon icon={faCircle} />
+            <p> Registered </p>
+          </div>
+          <div className='filter-text'>
+            <p> Seats Available </p>
+            <FontAwesomeIcon icon={faCircle} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Header;

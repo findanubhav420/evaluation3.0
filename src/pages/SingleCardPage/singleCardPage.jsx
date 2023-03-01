@@ -4,15 +4,19 @@ import Navbar from "../../components/Navbar/navbar.jsx";
 import DetailCard from "../../components/DetailCard/detailCard";
 import makeRequest from "../../utils/makeRequest";
 import {GET_EVENT_BY_ID} from "../../constants/apiEndPoints";
-function SingleCardPage(props) {
+import { useParams } from "react-router-dom";
+function SingleCardPage() {
+
+    const {id} = useParams();
     const [data,setData] = useState();
     useEffect(() => {
-        makeRequest(GET_EVENT_BY_ID(props.id))
+        makeRequest(GET_EVENT_BY_ID(id))
         .then((res) => {
             setData(res);
         })
     },[])
-    console.log(data);
+
+   
     return data?(
         <div className="singlecardPage">
        <Navbar/>

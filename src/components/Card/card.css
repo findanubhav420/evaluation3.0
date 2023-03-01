@@ -1,0 +1,84 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+.card{
+    height: 550px;
+    width: 450px;
+    background-color: black;
+    color: white;
+    padding: 1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-image{
+    height: 40%;
+    width: 100%;    
+}
+
+#card-img{
+    height: 100%;
+    width: 100%;    
+}
+
+.card-content{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.card-title{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Big Shoulders Text', sans-serif;
+}
+
+.card-description{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: 'Sofia Sans', sans-serif;
+}
+
+.card-icons{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-right: 5px;
+    
+}
+
+.bookmark-icon{
+    height: 100%;
+    width: 100%;
+    size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-div{
+   color:green;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

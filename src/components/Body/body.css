@@ -1,0 +1,15 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+.body{
+    width: 60%;
+    margin: 0 auto;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:50px;
+}

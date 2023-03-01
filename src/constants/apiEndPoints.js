@@ -1,16 +1,26 @@
-export const BACKEND_URL = 'http://localhost:';
+export const BACKEND_URL = 'http://localhost:8000';
 
-export const RECORDS_URL = {
-  url: 'api/records',
+export const GET_EVENTS = {
+  url: 'api/events',
   method: 'get'
 };
 
-export const GET_LIKES_URL = (recordId) => ({
-  url: `api/records/${recordId}/likes`,
-  method: 'get'
-});
-
-export const UPDATE_LIKES_URL = (recordId) => ({
-  url: `api/records/${recordId}/likes`,
+export const UPDATE_EVENT = (id) => ({
+  url: `api/events/${id}`,
   method: 'patch'
 });
+
+export const GET_EVENT_BY_ID = (id) => ({
+  url: `api/events/${id}`,
+  method: 'patch'
+});
+
+export const GET_THEMES ={
+  url: `api/themes`,
+  method: 'get'
+};
+
+export const SET_THEMES ={
+  url: `api/themes`,
+  method: 'put'
+};

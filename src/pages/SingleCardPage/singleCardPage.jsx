@@ -14,7 +14,7 @@ function SingleCardPage() {
         .then((res) => {
             setData(res);
         })
-    },[])
+    },[id])
 
    
     return data?(

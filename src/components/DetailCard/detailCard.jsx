@@ -21,17 +21,15 @@ function DetailCard(props) {
   const dateTime = time.tz(props.timezone).format("DD MMM YYYY HH:mm z");
 
    const handleBookmark = async()=> {
-        setBookmarked(!bookmarked);
-       const response= await makeRequest(UPDATE_EVENT(props.id), {data:{isBookmarked:bookmarked}})
-
-       console.log(response)
+       const response= await makeRequest(UPDATE_EVENT(props.id), {data:{isBookmarked:!bookmarked}})
+       setBookmarked(!bookmarked);
     }
    
 
     const handleRegisterButton = async()=>{
+        const response= await makeRequest(UPDATE_EVENT(props.id), {data:{isRegistered:!registered}})
         setRegistered(!registered);
-        const response= await makeRequest(UPDATE_EVENT(props.id), {data:{isRegistered:registered}})
-        console.log(response)
+        console.log("ronseesp")
     }
    
 
